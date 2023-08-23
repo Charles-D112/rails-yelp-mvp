@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     # get "/restaurants/:id", to: "restaurants#show", as: :restaurant
 
   resources :restaurants, only: [:index, :create, :new, :show] do
-    resources :reviews, only: [:new, :create]
+    resources :reviews, only: [:create]
   end
 end
